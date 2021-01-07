@@ -1,4 +1,6 @@
 # NFL Big Data Bowl 2021
+![Cluster Example](visuals/comparison.png)
+
 To determine the effectiveness of various defensive plays, one can simply use existing data fields such as offensive formation or defenders in the box. However, these fields contain very coarse information and may not offer key insight into play efficacy.
 
 I teamed up with my dad ([John Pfeifer](https://sydneyalgorithms.wordpress.com/people/), PhD computer science candidate at the University of Sydney) to contribute a novel data mining method that automatically determines a set of offensive and defensive play type categories based on the movement of the players and the football. My dad largely taught me about the research topics that were utilized (Gonzalez clustering, Dynamic Time Warp, linear trajectory simplification), and I coded all of the implementations and performed the exploratory data analysis and project writeup.
