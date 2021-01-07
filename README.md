@@ -9,7 +9,7 @@ We use the dynamic time warp (DTW) distance measure to compute distances between
 
 ## Files
 
-The jupyter notebook file contains our competition submission. There are additional Python files for custom built DTW and Gonzalez clustering algorithms. Data processing was largely done outside of the submitted jupyter notebook for performance.
+The link to the competition submission on Kaggle is [here](https://www.kaggle.com/evanpfeifer/uncovering-playbooks-automatic-play-clustering). Code for the Gonzalez clustering, Dynamic Time Warp, and linear trajectory simplification are found in `preprocessing.py` and `cluster.py`. 
 
 As the clustering code takes awhile to run, you can find the clustered data [here](https://drive.google.com/drive/folders/1ZVGIW-JvhbQ6BtuBfnXWq-oLQ-OdiSMj?usp=sharing). For this example, we clustered until the maximum radius of any cluster was below 1000 (DTW distance). The DTW algorithm runtime is quadratic in the number of trajectory vertices (frames), which can be computationally expensive for larger trajectories. We simplified the trajectories (reduce the vertices) using a straightforward linear-time algorithm by [Driemel et al. (2012)](https://www.researchgate.net/publication/221589940_An_algorithmic_framework_for_segmenting_trajectories_based_on_spatio-temporal_criteria). Our simplification error for the experiments is 3 yards, which results in much smaller trajectories that still describe the movement well.
 
